@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Drum Machine</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <script src='main.js'></script>
+    </head>
+
+    <body onkeydown="playAudio(event.key)">
+        <div id="drum-machine">
+            <div id="pads">
+                <button class="drum-pads" id="Q" onclick="playAudio('q')">
+                    <audio src="" id="q"></audio>
+                    Q
+                </button>
+                <button class="drum-pads" id="W" onclick="playAudio('w')">
+                    <audio src="" id="w"></audio>
+                    W
+                </button>
+                <button class="drum-pads" id="E" onclick="playAudio('e')">
+                    <audio src="" id="e"></audio>
+                    E
+                </button>
+                <button class="drum-pads" id="A" onclick="playAudio('a')">
+                    <audio src="" id="a"></audio>
+                    A
+                </button>
+                <button class="drum-pads" id="S" onclick="playAudio('s')">
+                    <audio src="" id="s"></audio>
+                    S
+                </button>
+                <button class="drum-pads" id="D" onclick="playAudio('d')">
+                    <audio src="" id="d"></audio>
+                    D
+                </button>
+                <button class="drum-pads" id="Z" onclick="playAudio('z')">
+                    <audio src="" id="z"></audio>
+                    Z
+                </button>
+                <button class="drum-pads" id="X" onclick="playAudio('x')">
+                    <audio src="" id="x"></audio>
+                    X
+                </button>
+                <button class="drum-pads" id="C" onclick="playAudio('c')">
+                    <audio src="" id="c"></audio>
+                    C
+                </button>
+            </div>
+
+            <div id="controls">
+                <label id="power">
+                    <input type="checkbox">
+                    <span class="slider" id="pslide"></span>
+                </label>
+                <label id="bank">
+                    <input type="checkbox">
+                    <span class="slider" id="bslide"></span>
+                </label>
+            </div>
+        </div>
+    </body>
+
+</html>
