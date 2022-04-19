@@ -124,6 +124,18 @@ let pads = {
     c: 9
 }
 
+let keyCode = {
+    '81': 'q',
+    '87': 'w',
+    '69': 'e',
+    '65': 'a',
+    '83': 's',
+    '68': 'd',
+    '90': 'z',
+    '88': 'x',
+    '67': 'c'
+}
+
 let power = false
 let bank = bankOne
 
@@ -138,15 +150,15 @@ function bankSwitch() {
 }
 
 function playAudio(pad) {
-    if (power) {
+    if (true) {
         audio = bank[pads[pad]]['url']
         display = bank[pads[pad]]['id']
         value = vol() / 10
-        document.getElementById(pad).setAttribute('src', audio)
+        document.getElementById(pad.toUpperCase()).setAttribute('src', audio)
         document.getElementById('display').innerHTML = display.toUpperCase()
         document.getElementsByTagName(pad).volume = value
         console.log(value, audio)
-        document.getElementById(pad).play();
+        document.getElementById(pad.toUpperCase()).play();
     }
 }
 
