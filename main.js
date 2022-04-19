@@ -124,18 +124,37 @@ let pads = {
     c: 9
 }
 
-function power() {
+let power = false
+let bank = bankOne
 
+function powerSwitch() {
+    power = power == false ? true : false
 }
 
-function bankSwitch() {
-    bankPos = document.getElementById('bslide')
 
+function bankSwitch() {
+    bank = bank == bankOne ? bankTwo : bankOne
+    console.log(bank)
 }
 
 function playAudio(pad) {
-    audio = bankOne[pads[pad]]['url']
-    console.log(audio)
-    document.getElementById(pad).setAttribute('src', audio)
-    document.getElementById(pad).play();
+    if (power) {
+        audio = bank[pads[pad]]['url']
+        display = bank[pads[pad]]['id']
+        value = vol() / 10
+        document.getElementById(pad).setAttribute('src', audio)
+        document.getElementById('display').innerHTML = display.toUpperCase()
+        document.getElementsByTagName(pad).volume = value
+        console.log(value, audio)
+        document.getElementById(pad).play();
+    }
 }
+
+function vol() {
+    value = document.getElementById('volume').value
+    document.getElementById('display').innerHTML = `Volume = ${value}`
+    setTimeout(() => document.getElementById('display').innerHTML = '', 1000);
+    return value
+}
+
+//console.log(volume())
