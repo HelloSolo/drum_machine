@@ -44,4 +44,10 @@
   #bank input:checked + .slider:before {
     transform: translateX(2rem); }
 
+#display {
+  width: 10rem;
+  height: 3rem;
+  padding: 1rem;
+  background-color: gray; }
+
 /*# sourceMappingURL=main.css.map */
