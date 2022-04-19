@@ -10,43 +10,43 @@
         <script src='main.js'></script>
     </head>
 
-    <body onkeydown="playAudio(event.key)">
+    <body onkeydown="playAudio(keyCode[event.which])">
         <div id="drum-machine">
             <div id="pads">
-                <button class="drum-pads" id="Q" onclick="playAudio('q')">
-                    <audio src="" id="q"></audio>
+                <button class="drum-pad" id="q" onclick="playAudio('q')">
+                    <audio src="" id="Q" class="clip"></audio>
                     Q
                 </button>
-                <button class="drum-pads" id="W" onclick="playAudio('w')">
-                    <audio src="" id="w"></audio>
+                <button class="drum-pad" id="w" onclick="playAudio('w')">
+                    <audio src="" id="W" class="clip"></audio>
                     W
                 </button>
-                <button class="drum-pads" id="E" onclick="playAudio('e')">
-                    <audio src="" id="e"></audio>
+                <button class="drum-pad" id="e" onclick="playAudio('e')">
+                    <audio src="" id="E" class="clip"></audio>
                     E
                 </button>
-                <button class="drum-pads" id="A" onclick="playAudio('a')">
-                    <audio src="" id="a"></audio>
+                <button class="drum-pad" id="a" onclick="playAudio('a')">
+                    <audio src="" id="A" class="clip"></audio>
                     A
                 </button>
-                <button class="drum-pads" id="S" onclick="playAudio('s')">
-                    <audio src="" id="s"></audio>
+                <button class="drum-pad" id="s" onclick="playAudio('s')">
+                    <audio src="" id="S" class="clip"></audio>
                     S
                 </button>
-                <button class="drum-pads" id="D" onclick="playAudio('d')">
-                    <audio src="" id="d"></audio>
+                <button class="drum-pad" id="d" onclick="playAudio('d')">
+                    <audio src="" id="D" class="clip"></audio>
                     D
                 </button>
-                <button class="drum-pads" id="Z" onclick="playAudio('z')">
-                    <audio src="" id="z"></audio>
+                <button class="drum-pad" id="z" onclick="playAudio('z')">
+                    <audio src="" id="Z" class="clip"></audio>
                     Z
                 </button>
-                <button class="drum-pads" id="X" onclick="playAudio('x')">
-                    <audio src="" id="x"></audio>
+                <button class="drum-pad" id="x" onclick="playAudio('x')">
+                    <audio src="" id="X" class="clip"></audio>
                     X
                 </button>
-                <button class="drum-pads" id="C" onclick="playAudio('c')">
-                    <audio src="" id="c"></audio>
+                <button class="drum-pad" id="c" onclick="playAudio('c')">
+                    <audio src="" id="C" class="clip"></audio>
                     C
                 </button>
             </div>
