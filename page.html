@@ -53,11 +53,14 @@
 
             <div id="controls">
                 <label id="power">
-                    <input type="checkbox">
+                    <input type="checkbox" onclick="powerSwitch()">
                     <span class="slider" id="pslide"></span>
                 </label>
+
+                <div id="display"></div>
+                <input type="range" id="volume" min="0" , max="10" onchange="vol()">
                 <label id="bank">
-                    <input type="checkbox">
+                    <input type="checkbox" onclick="bankSwitch()">
                     <span class="slider" id="bslide"></span>
                 </label>
             </div>
