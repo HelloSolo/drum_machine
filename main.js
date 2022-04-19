@@ -116,12 +116,12 @@ let pads = {
     q: 0,
     w: 1,
     e: 2,
-    a: 4,
-    s: 5,
-    d: 6,
-    z: 7,
-    x: 8,
-    c: 9
+    a: 3,
+    s: 4,
+    d: 5,
+    z: 6,
+    x: 7,
+    c: 8
 }
 
 let keyCode = {
@@ -150,7 +150,7 @@ function bankSwitch() {
 }
 
 function playAudio(pad) {
-    if (true) {
+    if (power) {
         audio = bank[pads[pad]]['url']
         display = bank[pads[pad]]['id']
         value = vol() / 10
